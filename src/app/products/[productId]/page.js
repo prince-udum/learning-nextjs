@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const generateMetadata = ({ params }) => {
+  return {
+    title: `Product ${params.productId}`,
+  };
+};
+
 const SingleProduct = ({ params }) => {
   return (
     <div>
